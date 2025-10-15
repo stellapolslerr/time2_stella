@@ -134,7 +134,7 @@ header {
 }
 
 .grid-consultoria img {
-    width: 45%;
+    width: 25%;
     border-radius: 8px;
 }
 
@@ -256,6 +256,10 @@ footer {
     margin-bottom: 0.8rem;
 }
 
+#footer-final {
+    text-align: center;
+
+}
 
 @media (max-width: 768px) {
     .grid-consultoria {
