@@ -1,0 +1,276 @@
+
+:root {
+    --bege-claro: #fdf8f3;
+    --marrom: #7a5b47;
+    --caramelo: #b37a4c;
+    --preto: #111;
+    --branco: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bege-claro);
+    color: var(--marrom);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: var(--marrom);
+    padding: 1rem 5%;
+    color: var(--branco);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-login {
+    background: var(--branco);
+    color: var(--marrom);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+}
+
+.cabecalho h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.cabecalho p {
+    margin-bottom: 1.5rem;
+}
+
+.cabecalho img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.btn-destaque {
+    background-color: var(--marrom);
+    color: var(--branco);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.produtos {
+    padding: 3rem 5%;
+}
+
+.produtos h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.grid-produtos img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.grid-produtos h3 {
+    margin-top: 0.8rem;
+}
+
+
+.consultoria {
+    padding: 3rem 5%;
+}
+
+.grid-consultoria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.grid-consultoria img {
+    width: 45%;
+    border-radius: 8px;
+}
+
+.grid-consultoria .texto {
+    flex: 1;
+    min-width: 280px;
+}
+
+.btn-secundario {
+    background-color: var(--branco);
+    color: var(--preto);
+    border: 1px solid #ccc;
+    padding: 0.7rem 1.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 0.8rem;
+}
+
+
+.moda-e-sociedade {
+    padding: 3rem 5%;
+}
+
+.grid-moda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.grid-moda img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.comentarios {
+    padding: 3rem 5%;
+    background-color: var(--branco);
+}
+
+.cards-comentarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--bege-claro);
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.autor img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+
+.conta {
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.btn-preto {
+    background: var(--preto);
+    color: var(--branco);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+footer {
+    background: var(--bege-claro);
+    border-top: 1px solid #ddd;
+    padding: 2rem 5%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-logo h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.social a img {
+    width: 20px;
+    margin-right: 0.8rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links h4 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.8rem;
+}
+
+
+@media (max-width: 768px) {
+    .grid-consultoria {
+        flex-direction: column;
+    }
+
+    .grid-consultoria img {
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .cabecalho {
+        text-align: left;
+    }
+}
